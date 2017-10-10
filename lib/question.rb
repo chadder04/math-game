@@ -12,7 +12,7 @@ class Question
   end
 
   def check_answer(answer)
-    if answer.to_i == @num1.send(@operation, @num2)
+    if answer.to_i == @num1.send(@operation, @num2).to_i
       return true
     else 
       return false

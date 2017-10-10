@@ -12,6 +12,10 @@ module MathGame
     @lives -= 1
   end
 
+  def gain_point
+    @score += 1
+  end
+
   def is_alive?
     @lives > 0
   end
